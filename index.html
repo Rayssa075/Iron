@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipe IronRacers - Formula SAE UNIFEI</title>
+    <!-- Vinculando o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Nav -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">IRON<span>RACERS</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio" class="active">Início</a></li>
+                    <li><a href="#valores">Valores</a></li>
+                    <li><a href="#trabalho">Nosso Trabalho</a></li>
+                    <li><a href="#quem-somos">Quem Somos</a></li>
+                    <li><a href="#patrocinadores">Patrocinadores</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero" id="inicio">
+        <h1>Equipe IronRacers</h1>
+        <p>Formula SAE - Universidade Federal de Itajubá (Campus Itabira)</p>
+        <button class="btn" onclick="document.getElementById('contato').scrollIntoView({behavior: 'smooth'});">Faça Parte / Contato</button>
+    </div>
+
+    <!-- Valores Section -->
+    <section id="valores">
+        <h2 class="section-title">Nossos Valores</h2>
+        <div class="values-grid">
+            <div class="value-card">
+                <h3>Desenvolver a Proatividade e Trabalho em Equipe</h3>
+                <p>Foco no crescimento profissional, autonomia de desenvolvimento e união técnica para superar desafios complexos de engenharia.</p>
+            </div>
+            <div class="value-card">
+                <h3>Eficiência e Comunicação</h3>
+                <p>Otimização de processos e clareza nas atividades desenvolvidas pela equipe em todos os subsistemas.</p>
+            </div>
+            <div class="value-card">
+                <h3>Respeito, Ética e Transparência</h3>
+                <p>Pilares fundamentais na governança da equipe, na relação entre os membros e com nossos parceiros e comunidade.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nosso Trabalho & Quem Somos Section -->
+    <section class="about-section-wrapper" id="trabalho">
+        <div class="about-container">
+            <h2 class="section-title">Nosso Trabalho & Objetivos</h2>
+            <div class="about-split" id="quem-somos">
+                <div class="about-text">
+                    <h3>Objetivos da Equipe</h3>
+                    <p>Proporcionar experiências práticas e teóricas para todos os membros envolvidos no desenvolvimento do projeto, buscando a otimização do ensino dos graduandos e a redução da evasão dos alunos matriculados nos cursos de engenharia, setor muito importante no progresso do país.</p>
+                    <p>Bem como promover o incentivo à educação junto à UNIFEI, a comunidade de Itabira e região, e seus parceiros comerciais e acadêmicos.</p>
+                </div>
+                <div class="about-text">
+                    <h3>Evento Formula SAE Brasil</h3>
+                    <p>A competição nacional de Fórmula SAE ocorre anualmente na cidade de Piracicaba/SP. Como preparação para este evento e com finalidade de arrecadar fundos, participamos de vários eventos distribuídos durante o ano todo.</p>
+                    <p>Ressaltamos a importância de nossas parcerias, mantendo sempre associada a marca de nossos parceiros junto à nossa trajetória de inovação.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Patrocinadores Section -->
+    <section id="patrocinadores">
+        <h2 class="section-title">Patrocinadores & Parceiros</h2>
+        <div class="sponsors-container">
+            <p>Marcas que aceleram junto com a IronRacers:</p>
+            <div class="sponsors-grid">
+                <div class="sponsor-item">UNIFEI - Itabira</div>
+                <div class="sponsor-item">INflow</div>
+                <div class="sponsor-item">3DFila</div>
+                <div class="sponsor-item">TCSO</div>
+                <div class="sponsor-item">ESSS - Ansys</div>
+                <div class="sponsor-item">Ciser</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato">
+        <h2 class="section-title">Contato</h2>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3>Encontre a Gente</h3>
+                <p><strong>Endereço:</strong> Rua Irmã Ivone Drumond, 200 - Distrito Industrial II – Itabira/MG</p>
+                <p><strong>E-mail:</strong> formulasaeunifei@gmail.com</p>
+                <p><strong>Horário de Funcionamento:</strong> Seg - Sex: 7:00 - 22:00</p>
+                <p style="margin-top: 20px; color: #ff6b00; font-weight: bold;">Área do membro IronRacers</p>
+            </div>
+            <div class="contact-form">
+                <form action="#" method="POST" onsubmit="alert('Demonstração: Formulário enviado com sucesso!'); return false;">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" placeholder="Seu nome completo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="Seu melhor e-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" rows="4" placeholder="Como podemos te ajudar?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%;">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        </div>
+        <p>&copy; 2026 Equipe IronRacers Formula SAE UNIFEI. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Vinculando o arquivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
